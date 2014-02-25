@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Math Elements | Math for the modern Web</title>
+    <meta name="description" content="display mathematical expressions on the web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="bower_components/polymer/polymer.js"></script>
+    <link rel="import" href="math_elements/mathelements.html">
+    
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="highlighter/prism.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all;source-code-pro:n2,n3,n4,n5,n6,n7,n9:all.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Math Elements</h1>
+      <p>Math for the modern Web</p>
+      <nav>
+        <h1>Nav</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Source</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="about">
+        <div>
+          <header>
+            <h1>About</h1>
+          </header>
+          <section id="overview">
+            <h1>Overview</h1>
+            <pre><code class="language-markup">&lt;math->
+  &lt;frac->
+    &lt;nu->ƒ(x)&lt;/nu->
+    &lt;de->g(x)&lt;/de->
+  &lt;/frac->
+&lt;/math-></code></pre>
+            
+            <math->
+              <frac->
+                <nu->ƒ(x)</nu->
+                <de->g(x)</de->
+              </frac->
+            </math->
+            
+            <pre><code class="language-markup">&lt;math->
+  &lt;def-inte- a="0" b="1" x="t">
+    &lt;frac->
+      &lt;nu->1&lt;/nu->
+      &lt;de->3&lt;/de->
+    &lt;/frac->
+    t&lt;super->2&lt;/super->ln&lt;super->3&lt;/super->(t)
+  &lt;/def-inte->
+&lt;/math-></code></pre>
+            
+            <math->
+              <def-inte- a="0" b="1" x="t">
+                <frac->
+                  <nu->1</nu->
+                  <de->3</de->
+                </frac->
+                t<super->2</super->ln<super->3</super->(t)
+              </def-inte->
+            </math->
+            
+            <pre><code class="language-markup">&lt;math->
+  &lt;inte- x="t">
+    &lt;frac->
+      &lt;nu->1&lt;/nu->
+      &lt;de->2&lt;/de->
+    &lt;/frac->
+    t ln
+    &lt;brack->(&lt;/brack->
+    &lt;frac->
+      &lt;nu->4&lt;/nu->
+      &lt;de->t&lt;super->2&lt;/super->&lt;/de->
+    &lt;/frac->
+    &lt;brack->)&lt;/brack->
+  &lt;/inte->
+&lt;/math-></code></pre>
+            
+            <math->
+              <inte- x="t">
+                <frac->
+                  <nu->1</nu->
+                  <de->2</de->
+                </frac->
+                t ln
+                <brack->(</brack->
+                <frac->
+                  <nu->4</nu->
+                  <de->t<super->2</super-></de->
+                </frac->
+                <brack->)</brack->
+              </inte->
+            </math->
+            
+            <pre><code class="language-markup">&lt;math->
+  &lt;deriv->
+    &lt;frac->
+      &lt;nu->e&lt;super->7x + 4&lt;/super->&lt;/nu->
+      &lt;de->tan(x + 4)&lt;/de->
+    &lt;/frac->
+  &lt;/deriv->
+&lt;/math-></code></pre>
+            
+            <math->
+              <deriv->
+                <frac->
+                  <nu->e<super->7x + 4</super-></nu->
+                  <de->tan(x + 4)</de->
+                </frac->
+              </deriv->
+            </math->
+            
+            <pre><code class="language-markup">&lt;math->
+  &lt;sum- i="n" m="0" n="∞">
+    &lt;frac->
+      &lt;nu->ƒ&lt;super->n&lt;/super->(a)&lt;/nu->
+      &lt;de->n!&lt;/de->
+    &lt;/frac->
+    (x &minus; a)&lt;super->n&lt;/super->
+  &lt;/sum->
+&lt;/math-></code></pre>
+            
+            <math->
+              <sum- i="n" m="0" n="∞">
+                <frac->
+                  <nu->ƒ<super->n</super->(a)</nu->
+                  <de->n!</de->
+                </frac->
+                (x &minus; a)<super->n</super->
+              </sum->
+            </math->
+            
+            <pre><code class="language-markup">&lt;math->
+  &lt;sum- i="n" m="0" n="∞">
+    F&lt;sub->n&lt;/sub->x&lt;super->n&lt;/super-> = 
+    &lt;frac->
+      &lt;nu->x&lt;/nu->
+      &lt;de->1 &minus; x &minus; x&lt;super->2&lt;/super->&lt;/de->
+    &lt;/frac->
+  &lt;/sum->
+&lt;/math-></code></pre>
+            
+            <math->
+              <sum- i="n" m="0" n="∞">
+                F<sub->n</sub->x<super->n</super-> = 
+                <frac->
+                  <nu->x</nu->
+                  <de->1 &minus; x &minus; x<super->2</super-></de->
+                </frac->
+              </sum->
+            </math->
+            
+          </section>
+          <section id="key-features">
+            <h1>Key Features</h1>
+            <ul class="math-style1">
+              <li>Math Elements are rendered as text</li>
+              <li>Math Elements are flexboxes</li>
+              <li>Math Elements can be nested</li>
+              <li>Math Elements can be enclosed within brackets</li>
+              <li>Math Elements wrap around when the browser window is resized</li>
+            </ul>
+          </section>
+          <section id="compare">
+            <h1>Compare</h1>
+            <h2>MathML</h2>
+            <pre><code class="language-markup">&lt;math xmlns='http://www.w3.org/1998/Math/MathML'>
+ &lt;mrow>
+  &lt;mo>&#8747;&lt;/mo>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mfrac>
+     &lt;mn>1&lt;/mn>
+     &lt;mn>2&lt;/mn>
+    &lt;/mfrac>
+    &lt;mo>&#8290;&lt;/mo>
+    &lt;mi>t&lt;/mi>
+    &lt;mo>&#8290;&lt;/mo>
+    &lt;mrow>
+     &lt;mi>ln&lt;/mi>
+     &lt;mo>&#8289;&lt;/mo>
+     &lt;mo>(&lt;/mo>
+     &lt;mfrac>
+      &lt;mn>4&lt;/mn>
+      &lt;msup>
+       &lt;mi>t&lt;/mi>
+       &lt;mn>2&lt;/mn>
+      &lt;/msup>
+     &lt;/mfrac>
+     &lt;mo>)&lt;/mo>
+    &lt;/mrow>
+   &lt;/mrow>
+   &lt;mo>&#8290;&lt;/mo>
+   &lt;mrow>
+    &lt;mo>&#8518;&lt;/mo>
+    &lt;mi>t&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math></code></pre>
+            <h2>Math Elements</h2>
+            <pre><code class="language-markup">&lt;math->
+  &lt;inte- x="t">
+    &lt;frac->
+      &lt;nu->1&lt;/nu->
+      &lt;de->2&lt;/de->
+    &lt;/frac->
+    t ln
+    &lt;brack->(&lt;/brack->
+    &lt;frac->
+      &lt;nu->4&lt;/nu->
+      &lt;de->t&lt;super->2&lt;/super->&lt;/de->
+    &lt;/frac->
+    &lt;brack->)&lt;/brack->
+  &lt;/inte->
+&lt;/math-></code></pre>
+          </section>
+          <section id="introduction">
+            <h1>Introduction</h1>
+            <p>Displaying mathematical expressions on the web has never been an easy task. The vast majority of websites (including Wikipedia and WolframAlpha) display them as images. However, this is far from an ideal solution. They can not be easily manipulated, they are not responsive, they are practically inaccessible.</p>
+            <p>Math Elements rely on cutting-edge technologies to provide an interesting and practical solution to help overcome these issues. Well structured, intuitive, responsive, flexible, reliable, future-proof and, of course, open-source.</p>
+            <p>The source code itself is very small. It is only 1KB.</p>
+            <p>As browsers do not yet natively support Web Components (not completely at least), we need polyfills. <a href="">Polymer</a> platform has polyfills for Templates, Custom Elements, Shadow DOM and Imports, among others. In addition, Polymer core provides Polymer elements, which are custom elements created declaratively. Polymer is an <a href="">open-source</a> project.</p>
+          </section>
+          <footer>
+            <p>Math Elements v0.1.0</p>
+          </footer>
+        </div>
+        <aside>
+          <h1>Contents</h1>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#key-features">Key Features</a></li>
+            <li><a href="#compare">Compare</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+          </ul>
+        </aside>
+      </article>
+      <article id="docs">
+        <div>
+          <header>
+            <h1>Docs</h1>
+          </header>
+          <section id="implementation">
+            <h1>Implementation</h1>
+            <pre><code class="language-markup">bower_components/
+  platform/platform.js
+  polymer/polymer.js
+math_elements/
+  mathelements.css
+  mathelements.html
+  mathelements.js
+index.html
+</code></pre>
+            <pre><code class="language-markup">&lt;!doctype html>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="utf-8">
+    &lt;script src="bower_components/platform/platform.js">&lt;/script>
+    &lt;script src="bower_components/polymer/polymer.js">&lt;/script>
+    &lt;link rel="import" href="math_elements/mathelements.html">
+    &lt;script src="//use.edgefonts.net/
+                 source-sans-pro:n2,i2,n3,i3,n4,i4:all.js">&lt;/script> 
+  &lt;/head></code></pre>
+            <p>Edge Web Fonts <a href="https://edgewebfonts.adobe.com/help#terms">Terms</a></p>
+            <p>Source Sans Pro Font <a href="https://github.com/adobe/source-sans-pro/blob/master/LICENSE.txt">License</a></p>
+          </section>
+          <section id="basics">
+            <h1>Basics</h1>
+            <p>Math Elements are in fact quite simple and easy to use. All Math Elements are custom HTML tags (HTML elements enclosed in a pair of angle brackets <code class="language-markup">&lt; ></code> ) in the form of <code class="language-markup">&lt;tagname->&lt;/tagname-></code></p>
+            <p>Tag names are case-insensitive. Both <code class="language-markup">&lt;sum->&lt;/sum-></code> and <code class="language-markup">&lt;SUM->&lt;/SUM-></code> become <math- class="math-style1"><sum-></sum-></math-></p>
+            <p>They are, in most cases, composed of the first two syllables of the name of the expression in question, and must end with the hyphen <code class="language-markup">-</code> character. Integral (in-te-gral) becomes <code class="language-markup">inte-</code> (or <code class="language-markup">INTE-</code>), derivative (de-riv-a-tive) becomes <code class="language-markup">deriv-</code>, and so on.</p>
+            <p>Some elements have attributes <code class="language-markup">&lt;tagname- attrname="value"></code>, e.g., <code class="language-markup">&lt;lim-></code> has the attributes <code class="language-markup">x</code> and <code class="language-markup">a</code> <math-inline- math- class="math-style1"><lim-></lim-></math-inline->, <code class="language-markup">&lt;lim- x="value" a="value"></code>. If no value is assigned to an attribute, a default value will be displayed instead. <code class="language-markup">&lt;lim->&lt;/lim-></code> returns <math-inline- math- class="math-style1"><lim-></lim-></math-inline-> by default. Omitting the attribute x within <code class="language-markup">&lt;lim-></code> is the same as assigning the value "x" to its attribute <code class="language-markup">&lt;lim- x="x"></code>. If the string is left empty <code class="language-markup">&lt;lim- x=""></code>, no value will be displayed <math-inline- math- class="math-style1"><lim- x=""></lim-></math-inline->.</p>
+            <p><code class="language-markup">&lt;brack->&lt;/brack->content&lt;brack->&lt;/brack-></code> can be placed around any element and can also be nested. They are responsive and will adjust themselves to match the space occupied by their content.</p>
+          </section>
+          <section id="reference">
+            <h1>Reference</h1>
+            <ul>
+              <li><a href="#math">Math Elements Expression</a></li>
+              <li><a href="#math-inline">Math Elements in Line</a></li>
+              <li><a href="#brack">Bracket</a></li>
+              <li><a href="#frac">Fraction</a></li>
+              <li><a href="#lim">Limit</a></li>
+              <li><a href="#deriv">Derivative</a></li>
+              <li><a href="#par-deriv">Partial Derivative</a></li>
+              <li><a href="#inte">Integral</a></li>
+              <li><a href="#def-inte">Definite Integral</a></li>
+              <li><a href="#sum">Sum</a></li>
+              <li><a href="#prod">Product</a></li>
+              <li><a href="#super">Superscript</a></li>
+              <li><a href="#sub">Subscript</a></li>
+            </ul>
+            <h2 id="math">Math Elements Expression</h2>
+            <code class="language-markup mar1">&lt;math->&lt;/math-></code>
+            <h2 id="math-inline">Math Elements in Line</h2>
+            <code class="language-markup mar1">&lt;math-inline->&lt;/math-inline-></code>
+            <h2 id="brack">Bracket</h2>
+            <math-><brack-></brack-></math->
+            <code class="language-markup mar1">&lt;brack->&lt;/brack-></code>
+            <h2 id="frac">Fraction</h2>
+            <math- class="mar1"><frac-></frac-></math->
+            <code class="language-markup mar1">&lt;frac->&lt;/frac-></code>
+            <h3>Numerator</h3>
+            <math-><nu-></nu-></math->
+            <code class="language-markup mar2">&lt;nu->&lt;/nu-></code>
+            <math-><de-></de-></math->
+            <h3>Denominator</h3>
+            <code class="language-markup mar2">&lt;de->&lt;/de-></code>
+            <h2 id="lim">Limit</h2>
+            <p class="mar1">attributes: variable x, point a</p>
+            <math- class="mar1"><lim-></lim-></math->
+            <code class="language-markup mar1">&lt;lim->&lt;/lim-></code>
+            <h2 id="deriv">Derivative</h2>
+            <p class="mar1">attribute: variable x</p>
+            <math- class="mar1"><deriv-></deriv-></math->
+            <code class="language-markup mar1">&lt;deriv->&lt;/deriv-></code>
+            <h2 id="par-deriv">Partial Derivative</h2>
+            <p class="mar1">attribute: variable x</p>
+            <math- class="mar1"><par-deriv-></par-deriv-></math->
+            <code class="language-markup mar1">&lt;par-deriv->&lt;/par-deriv-></code>
+            <h2 id="inte">Integral</h2>
+            <p class="mar1">attribute: variable x</p>
+            <math- class="mar1"><inte-></inte-></math->
+            <code class="language-markup mar1">&lt;inte->&lt;/inte-></code>
+            <h2 id="def-inte">Definite Integral</h2>
+            <p class="mar1">attributes: lower limit a, upper limit b, variable x</p>
+            <math- class="mar1"><def-inte-></def-inte-></math->
+            <code class="language-markup mar1">&lt;def-inte->&lt;/def-inte-></code>
+            <h2 id="sum">Sum</h2>
+            <p class="mar1">attributes: index i, lower limit m, upper limit n</p>
+            <math- class="mar1"><sum-></sum-></math->
+            <code class="language-markup mar1">&lt;sum->&lt;/sum-></code>
+            <h2 id="prod">Product</h2>
+            <p class="mar1">attributes: index i, lower limit m, upper limit n</p>
+            <math- class="mar1"><prod-></prod-></math->
+            <code class="language-markup mar1">&lt;prod->&lt;/prod-></code>
+            <h2 id="super">Superscript</h2>
+            <math- class="mar1">x<super->y<super->z</super-></super-></math->
+            <code class="language-markup mar1">&lt;super->&lt;/super-></code>
+            <h2 id="sub">Subscript</h2>
+            <math- class="mar1 mar3">x<sub->y<sub->z</sub-></sub-></math->
+            <code class="language-markup mar1">&lt;sub->&lt;/sub-></code>
+          </section>
+          <section id="browser-compatibility">
+            <h1>Browser Compatibility</h1>
+            <p><a href="http://www.polymer-project.org/resources/compatibility.html">Polymer Compatibility</a></p>
+            <p><a href="http://caniuse.com/flexbox">Flexbox Compatibility</a></p>
+          </section>
+          <footer>
+            <p>Math Elements v0.1.0</p>
+          </footer>
+        </div>
+        <aside>
+          <h1>Contents</h1>
+          <ul>
+            <li><a href="#implementation">Implementation</a></li>
+            <li><a href="#basics">Basics</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#browser-compatibility">Browser Compatibility</a></li>
+          </ul>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2014 Charbel Rami. All rights reserved. Source code licensed under the <a href="#">MIT License</a>.</p>
+    </footer>
+    <script src="highlighter/prism.js"></script>
+  </body>
+</html>
