@@ -1,0 +1,30 @@
+{
+  "name": "Math Elements",
+  "version": "0.1.0",
+  "authors": [
+    "Charbel <charbel.f.rami@gmail.com>"
+  ],
+  "description": "Math for the modern Web",
+  "keywords": [
+    "math",
+    "expressions",
+    "web",
+    "comoponents",
+    "elements",
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "http://charbelrami.github.io/math-elements/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.2.0"
+  },
+  "main": "mathelements.html"
+}

@@ -1,0 +1,114 @@
+math-, math-inline- {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #4d4d4d;
+}
+
+math- {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.math-e-row, .math-e-column, math-inline-, frac-, lim-, deriv-, par-deriv-, inte-, def-inte-, sum-, prod-, nu-, de- {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.math-e-column, frac- {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.math-e-row, math-, math-inline-, lim-, deriv-, par-deriv-, inte-, def-inte-, sum-, prod-, nu-, de- {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.math-e-large {
+  font-size: 2em;
+}
+
+.math-e-small {
+  font-size: 0.7em;
+}
+
+.math-e-grow {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.math-e-stretch, brack- {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.math-e-translate-y-superscript {
+  -webkit-transform: translateY(-0.5em);
+}
+
+.math-e-translate-y-subscript {
+  -webkit-transform: translateY(0.25em);
+}
+
+.math-e-translate-xy-upper-limit {
+  -webkit-transform: translate(-0.05em, -0.4em);
+}
+
+.math-e-translate-xy-lower-limit {
+  -webkit-transform: translate(-0.3em, 0.4em);
+}
+
+nu- {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+de- {
+  border-top: 1px solid #4d4d4d;
+}
+
+.math-e-text-center, frac- {
+  text-align: center;
+}
+
+nu-, de- {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
+}
+
+.math-e-adjust-line-height {
+  line-height: 0.8;
+}
+
+frac- {
+  margin-left: 0.125em;
+  margin-right: 0.125em;
+}
+
+lim-, inte-, def-inte-, sum-, prod- {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+brack- {
+  font-weight: 200;
+}
