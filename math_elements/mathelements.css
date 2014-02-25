@@ -54,6 +54,7 @@ math- {
 
 .math-e-stretch, brack- {
   -webkit-align-self: stretch;
+  -moz-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
 }
